@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+           http://www.springframework.org/schema/jee
+           http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+	
+
+	<!-- Se hace referencia por jndi al Datasource correspondiente -->
+<!-- 	<jee:jndi-lookup jndi-name="ds/tceOra" id="dataSource"/>  -->
+	<jee:jndi-lookup jndi-name="${HIBERNATE_DATASOURCE}" id="dataSource"/> 
+    
+	<!-- Hibernate session factory -->
+	<bean id="sessionFactory" 
+	     class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">	
+	 	<property name="dataSource" ref="dataSource" />
+	    <property name="hibernateProperties">
+	       <props>
+			 <prop key="hibernate.default_schema">${HIBERNATE_ESQUEMA}</prop>
+			 <prop key="hibernate.dialect">${HIBERNATE_DIALECT}</prop> 
+	         <prop key="hibernate.show_sql">${HIBERNATE_SHOW_SQL}</prop>
+	         <prop key="hibernate.format_sql">${HIBERNATE_FORMAT_SQL}</prop>
+	       </props>
+	    </property>	 
+	   
+	</bean> 
+
+	<!-- Para la creación de Sesiones utilizamos HibernateTemplate -->
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean> 
+		
+</beans>

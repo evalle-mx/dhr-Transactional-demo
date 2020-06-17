@@ -1,0 +1,18 @@
+(DUMMY-CREATE PARA REEMPLAZAR EN MOCK)
+
+Flujo Transactional:
+
+1. Inicia ClientRestJsonImpl [@Service("clientRestService")] (Conecta a Operational)
+
+2. Inicia ClientAWSImpl [@Service("clientAWSServer")] (Conecta a AWS-Bucket)
+
+3. Inicia los Beans en SeveralConfig [@Configuration] 
+	a)inicia AppStartUp [@PostConstruct]
+		- llama @Service("empresaInterfaseService") para listado EMPRESA_PARAMETRO tipo:Contenido y Se carga FileCache.setChmcontenido
+		- llama empresaConfDao.findAll para llenar EmpresaConfCache con cada elemento EMPRESA_CONF
+		- llama avisofDao.findAll() para llenar AvisoCache con cada elemento AVISO
+		
+4. 
+		
+
+

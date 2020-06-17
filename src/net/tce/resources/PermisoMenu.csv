@@ -1,0 +1,28 @@
+id_permiso;id_permiso_relacionada;contexto;valor;descripcion;id_tipo_permiso
+112;;Curriculum Vitae;#/cvpw;Ruta (NodoHijo);2
+113;;Posición;;Etiqueta 1;2
+114;113;Buscar CV;#/cvfind;Ruta (NodoHijo);2
+115;113;Perfiles;#/prfhome;Ruta (NodoHijo);2
+116;113;Vacantes;#/vchome;Ruta (NodoHijo);2
+117;;Administración;;Etiqueta 1;2
+118;117;Carga Masiva;;Etiqueta 2;2
+119;118;Semillas Modelo;#/seeds;Ruta (NodoHijo);2
+120;118;Archivo Csv;#/csvupl;Ruta (NodoHijo);2
+121;117;Modelo;;Etiqueta 2;2
+122;121;Reload Core Solr;#/vprcs/3;Ruta (NodoHijo);2
+123;121;Reclasificar;#/vprcs/4;Ruta (NodoHijo);2
+124;121;Remodelar;#/vprcs/2;Ruta (NodoHijo);2
+125;117;Empresa;;Etiqueta 2;2
+126;125;Lista de Empresas;#/ehome;Ruta (NodoHijo);2
+127;125;CV Empresarial;#/eupd;Ruta (NodoHijo);2
+128;117;Documentos;;Etiqueta 2;2
+129;128;Clasificados;#/vdc;Ruta (NodoHijo);2
+130;128;Sincronización;#/vprcs/1;Ruta (NodoHijo);2
+131;117;Roles y Permisos ;;Etiqueta 2;2
+132;131;Permisos;#/perm;Ruta (NodoHijo);2
+133;131;Roles;;Etiqueta 3;2
+134;133;Rol;#/rol;Ruta (NodoHijo);2
+135;133;Asignar Permisos;#/asgperm;Ruta (NodoHijo);2
+136;117;Catálogos;#/catadm;Ruta (NodoHijo);2
+137;133;Empresa Parametro;#/eparam;Ruta (NodoHijo);2
+138;;Cambio de Contraseña;#/vccn;Ruta (NodoHijo);2

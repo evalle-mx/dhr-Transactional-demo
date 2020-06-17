@@ -1,0 +1,116 @@
+id_permiso;id_permiso_relacionada;contexto;valor;descripcion;id_tipo_permiso
+1;;ACADBACK.C;/module/academicBackground/create;URI para crear un nuevo registro de trayectoria Académica;1
+2;;ACADBACK.D;/module/academicBackground/delete;URI para eliminar un registro de trayectoria Académica;1
+3;;ACADBACK.G;/module/academicBackground/get;URI para obtener un registro de trayectoria Académica;1
+4;;ACADBACK.U;/module/academicBackground/update;URI para actualizar un registro de trayectoria Académica;1
+5;;ADMIN.M;/admin/management/menu;URI para obtener el menu;1
+6;;APPLICANT.G;/module/applicant/getApplicants;URI para obtener Candidatos obtenidos por proceso de Applicant;1
+7;;APPLICANT.S;/module/applicant/searchApplicants;URI para procesar datos y generar candidatos que seran almacenados en persistencia;1
+8;;APPLICANTVACANCY.R;/module/applicant/readVacancy;URI para obtener informacion de la vacante solicitada;1
+9;;ASSOCIATE.C;/module/curriculumCompany/requestAssociation;URI para Crear nueva relación de solicitud de asociación a empresa;1
+10;;ASSOCIATE.G;/module/curriculumCompany/getAssociates;URI para obtener lista de personas con solicitud en empresa;1
+11;;ASSOCIATE.U;/module/curriculumCompany/updateAssociation;URI para modificar/añadir relaciónes Con empresa;1
+12;;CATALOGUE.C;/admin/catalogue/createCatalogueRecord;URI para crear registro de catalogo;1
+13;;CATALOGUE.G;/admin/catalogue/getCatalogueValues;URI para obtener Json de Catalogo y/o Catalogos;1
+14;;CATALOGUE.U;/admin/catalogue/updateCatalogueRecord;URI para actualizar registro de catalogo;1
+15;;CATAREA.G;/admin/catalogue/getAreas;URI para obtener Json personalizado para catalogo de area Dinamico;1
+16;;COMPANY.C;/module/curriculumCompany/create;URI para insertar nuevo registro(s) de Empresas relacionada a persona;1
+17;;COMPANY.DIS;/module/curriculumCompany/disassociate;URI para dessociar una persona de una empresa;1
+18;;COMPANY.FS;/module/curriculumCompany/findSimilar;URI para obtener lista de registro(s) de Empresas que coincidan con parametros de busqueda;1
+19;;COMPANY.G;/module/curriculumCompany/get;URI para obtener lista de registro(s) de Empresas relacionadas a persona;1
+20;;COMPANY.P;/module/curriculumCompany/setEnterpriseResumePublication;URI para publicar un cv empresarial;1
+21;;COMPANY.R;/module/curriculumCompany/read;URI para obtener registro (unico) de Empresa por ID;1
+22;;COMPANY.U;/module/curriculumCompany/update;URI para actualizar registro (unico) de Empresa por ID;1
+23;;CONTACT.C;/module/contact/create;URI para crear un registro de contacto;1
+24;;CONTACT.D;/module/contact/delete;URI para eliminar un registro de contacto;1
+25;;CONTACT.U;/module/contact/update;URI para crear un registro de contacto;1
+26;;DOCSCLASS.G;/module/classify/get;URI para obtener registros de documentos (solr) clasificados;1
+27;;DOCSCLASS.U;/module/classify/update;URI para actualizar registros de documentos (solr) clasificados;1
+28;;EPARAMS.G;/module/enterpriseParameter/get;URI. Listar empresa parametro;1
+29;;EPARAMS.C;/module/enterpriseParameter/create;URI. Crear nuevo registo en Empresa Parámetro;1
+30;;EPARAMS.U;/module/enterpriseParameter/update;URI. Actualizar registro empresa Parametro;1
+31;;EPARAMS.M;/module/enterpriseParameter/updmultiple;URI. Actualizar registro empresa Parametro multiple;1
+32;;EPARAMS.RL;/module/enterpriseParameter/reload;URI. Recargar el Cache de parametros por Tipo;1
+33;;EPARAMS.D;/module/enterpriseParameter/delete;URI. Eliminar un registro Empresa Parametro;1
+34;;FILE.D;/module/file/delete;URI para eliminar un registro de contenido;1
+35;;FILE.G;/module/file/get;URI para obtener el listado de archivos asociados a la persona;1
+36;;HANDSHAKE.C;/module/handshake/create;URI para procesar una petición de HandSHake;1
+37;;LANGUAGE.C;/module/language/create;URI para crear un nuevo registro de Idioma en Persona/Posicion;1
+38;;LANGUAGE.D;/module/language/delete;URI para procesar una petición de DELETE de Idioma para Persona;1
+39;;LANGUAGE.U;/module/language/update;URI para procesar una petición de UPDATE de Idioma para Persona;1
+40;;LOCATION.C;/module/location/create;URI para crear un registro de domicilio;1
+41;;LOCATION.D;/module/location/delete;URI para eliminar un registro de domicilio;1
+42;;LOCATION.G;/module/location/get;URI para obtener un registro de domicilio;1
+43;;LOCATION.U;/module/location/update;URI para crear un registro de domicilio;1
+44;;NOTIFICATION.G;/module/notification/get;URI para obtener lista de Notificaciones;1
+45;;PERMISSION.C;/admin/permission/create;URI creación de UriCode/Permiso;1
+46;;PERMISSION.D;/admin/permission/delete;URI Eliminación de Permiso;1
+47;;PERMISSION.G;/admin/permission/get;URI para procesar una petición de Get de permisos por Rol;1
+48;;PERMISSION.U;/admin/permission/update;URI para procesar una petición de UPDATE de relación persona-permiso;1
+49;;PERSCERT.C;/module/personCert/create;URI Crear un registro de Certificación Persona;1
+50;;PERSCERT.D;/module/personCert/delete;URI Eliminar un registro de Certificación Persona;1
+51;;PERSCERT.U;/module/personCert/update;URI Actualizar un registro de Experiencia Certificación Persona;1
+52;;PERSKILL.C;/module/personSkill/create;URI para crear un registro de contacto;1
+53;;PERSKILL.D;/module/personSkill/delete;URI para eliminar un registro de contacto;1
+54;;PERSKILL.U;/module/personSkill/update;URI para crear un registro de contacto;1
+55;;PERSON.D;/module/curriculumManagement/delete;URI para borrar un registro de persona;1
+56;;PERSON.G;/module/curriculumManagement/get;URI para obtener listado de personas según parametros;1
+57;;PERSON.P;/module/applicant/setResumePublication;URI para publicar un cv personal;1
+58;;PERSON.PW;/admin/management/updpwd;URI para reemplazar la contraseña de acceso;1
+59;;PERSON.R;/module/curriculumManagement/read;URI para obtener un registro de persona;1
+60;;PERSON.U;/module/curriculumManagement/update;URI para actualizar un registro existente de persona;1
+61;;POSITIONCERT.C;/module/positionCert/create;URI Crear un registro de Certificación Posición;1
+62;;POSITIONCERT.D;/module/positionCert/delete;URI Eliminar un registro de Certificación Posición;1
+63;;POSITIONCERT.U;/module/positionCert/update;URI Actualizar un registro de Experiencia Certificación Posición;1
+64;;POSITIONCOMPETENCE.U;/module/positionCompet/update;URI Actualizar un registro de Competencia Posición;1
+65;;POSITIONSKILL.C;/module/positionSkill/create;URI para procesar una petición de CREATE de Habilidad Posición;1
+66;;POSITIONSKILL.D;/module/positionSkill/delete;URI para procesar una petición de DELETE de Habilidad Posición;1
+67;;POSITIONSKILL.G;/module/positionSkill/get;URI para procesar una petición de GET de Habilidad Posición;1
+68;;POSITIONSKILL.U;/module/positionSkill/update;URI para procesar una petición de UPDATE de Habilidad Posición;1
+69;;PROFILE.A;/module/profile/updateAssociation;URI para procesar una asociación entre posición y perfil;1
+70;;PROFILE.CPB;/module/profile/createpublic;URI para crear un nuevo registro de Perfil accesable por todos las Apps (admin-Dothr);1
+71;;PROFILE.CPV;/module/profile/createprivate;URI para crear un nuevo registro de Perfil accesable por solo por App Propietaria;1
+72;;PROFILE.D;/module/profile/delete;URI para eliminar un registro de Perfil;1
+73;;PROFILE.G;/module/profile/get;URI para obtener un registro de Perfil;1
+74;;PROFILE.R;/module/profile/read;URI para leer nuevo registro de Perfil;1
+75;;PROFILE.U;/module/profile/update;URI para actualizar un registro de Perfil;1
+76;;PROFILETEX.C;/module/profile/textcreate;URI para crear un nuevo registro de Texto Ngram;1
+77;;PROFILETEX.D;/module/profile/textdelete;URI para eliminar un registro de Texto Ngram;1
+78;;PROFILETEX.G;/module/profile/textget;URI para obtener listado de Texto Ngram;1
+79;;PROFILETEX.U;/module/profile/textupdate;URI para actualizar un registro de Texto Ngram;1
+80;;RECLASIFY.T;/module/task/reClassification;URI para Iniciar un proceso de reclasificación en Solr;1
+81;;RECLASSDOCS.LD;/admin/management/lastDateReclassDocs;URI para obtener última fecha del proceso de reclasificacion de CVs;1
+82;;RELOADCORESOLR.LD;/admin/management/lastDateReLoadCoreSolr;URI para obtener última fecha del proceso reload core solr;1
+83;;RELOADCORESOLR.T;/module/task/reloadCoreSolr;URI para aplicar el proceso Reload Core Solr;1
+84;;REMODELING.LD;/admin/management/lastDateRemodel;URI para obtener última fecha del proceso de remodelación;1
+85;;REMODELING.T;/module/task/reModel;URI para Iniciar un proceso de Remodelación de DocumentosClasificados Solr;1
+86;;REPORT.C;/module/report/create;URI para generación de Reporte/Archivo/PDF dependiendo sus parámetros;1
+87;;ROL.G;/admin/rol/get;URI para obtener un listado de roles;1
+88;;ROL.AP;/admin/rol/assignPerms;URI para actualizar el campo de activo;1
+89;;ROL.C;/admin/rol/create;URI. Crea nuevo registro de Rol;1
+90;;ROL.U;/admin/rol/update;URI. Actualiza registro de Rol;1
+91;;ROL.D;/admin/rol/delete;URI. Elimina registro de Rol;1
+92;;SETTLEMENT.C;/module/settlement/create;URI para actualizar un registro de;1
+93;;SYNCDOCS.LD;/admin/management/lastDateSyncDocs;URI para obtener última fecha del proceso de sincronización de documentos;1
+94;;SYNCHRONIZE.T;/module/task/syncClassDocs;URI para Iniciar un proceso de Sincronización de DocumentosClasificados Solr-DB;1
+95;;TIPOPERMISO.G;/admin/tipoPermiso/get;URI para obtener un listado de tipo permiso;1
+96;;TOKENUPLOAD.C;/module/classify/loadTokens;URI para crear documentos por medio de palabras clave y subirlos a Solr;1
+97;;VACANCY.C;/module/vacancy/create;URI para crear un nuevo registro de posición;1
+98;;VACANCY.CL;/module/vacancy/clone;URI para clonar los registros asociados a una posición;1
+99;;VACANCY.D;/module/vacancy/delete;URI para eliminar un registro de posición;1
+100;;VACANCY.DC;/module/vacancy/dataconf;URI que obtiene dataconf de posición;1
+101;;VACANCY.G;/module/vacancy/get;URI para obtener registro(s) de posición;1
+102;;VACANCY.P;/module/vacancy/setVacancyPublication;URI para publicar una posición;1
+103;;VACANCY.R;/module/vacancy/read;URI para leer un registro de posición;1
+104;;VACANCY.U;/module/vacancy/update;URI para actualizar un registro de posición;1
+105;;VACANCYTEXT.C;/module/vacancyText/create;URI para crear un nuevo registro de función o texto asociado al perfil;1
+106;;VACANCYTEXT.D;/module/vacancyText/delete;URI para eliminar un registro de función o texto asociado al perfil;1
+107;;VACANCYTEXT.U;/module/vacancyText/update;URI para actualizar un registro de función o texto asociado al perfil;1
+108;;WORKEXP.C;/module/workExperience/create;URI para crear un nuevo registro de Experiencia laboral;1
+109;;WORKEXP.D;/module/workExperience/delete;URI para eliminar un registro de Experiencia laboral;1
+110;;WORKEXP.G;/module/workExperience/get;URI para obtener listado de Experiencia laboral;1
+111;;WORKEXP.U;/module/workExperience/update;URI para actualizar un registro de Experiencia laboral;1
+112;;DOCUMENT.FCR;/module/compensationf/read;URI read;1
+113;;DOCUMENT.FCC;/module/compensationf/create;URI creación de UriCode/Permiso;1
+114;;DOCUMENT.FCU;/module/compensationf/update;Uri Update;1
+115;;DOCUMENT.FCD;/module/compensationf/delete;Uri Delte;1

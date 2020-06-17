@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	 
+	 <!-- Para obtener el contexto  -->
+	 <bean id="applicationContextProvider"  class="net.tce.util.ApplicationContextProvider" />
+	 
+	 <!-- Libreria para convertir mensajes json a objetos, y visceversa   -->
+     <bean id="gson"  class="com.google.gson.Gson"  /> 
+     
+	<!--Se tiene que crear gson de esta manera ya que algunos signos como =, se regresan en hexadecimal
+	Gson gson = new GsonBuilder().disableHtmlEscaping().create();
+	Por ejemplo probar el servicio /module/enterprise Parameter/get con IdTipoParametro=5
+	<bean id="gson"  class="com.google.gson.GsonBuilder" init-method="create"  />  -->
+	
+      
+   	 <!-- Clases donde se inicializan propiedades de  objetos  -->
+     <bean id="socialApiAssembler"  class="net.tce.assembler.SocialApiAssembler" />
+      
+</beans>

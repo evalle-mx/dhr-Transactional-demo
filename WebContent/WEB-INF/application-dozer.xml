@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	 
+	 
+	<!--Config. del converter Dozer -->
+	 <bean id="converter" class="org.springframework.context.support.ConversionServiceFactoryBean">
+	   <property name="converters">
+	     <list>
+	       <bean class="net.tce.util.converter.DozerConverter">
+	         <property name="mapper">
+	           <bean class="org.dozer.DozerBeanMapper">
+	             <property name="mappingFiles">
+	               <list>
+	                 <value>net/tce/resources/dozer-catalogos-mapping.xml</value>
+	                 <value>net/tce/resources/dozer-curriculum-mapping.xml</value>
+	                 <value>net/tce/resources/dozer-file-mapping.xml</value>
+	                 <value>net/tce/resources/dozer-applicant-mapping.xml</value>
+	                 <value>net/tce/resources/dozer-employer-mapping.xml</value>
+	                 <value>net/tce/resources/dozer-enterprise-mapping.xml</value>
+	                 <value>net/tce/resources/dozer-notification-mapping.xml</value>
+	                 <value>net/tce/resources/dozer-solrdocs-mapping.xml</value>	                 
+	               </list>
+	             </property>
+	           </bean>
+	         </property>
+	       </bean>
+	     </list>
+	   </property>
+	 </bean>
+	 	 
+     
+</beans>
